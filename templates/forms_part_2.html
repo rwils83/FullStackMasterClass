@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms Part 2</title>
+</head>
+<body>
+<!--- Create a hotel feedback form: My solution --->
+<h1>Hotel Feedback</h1>
+<form action="redirect2.html">
+    <p>Are you from the US or outside of the US?</p>
+    <label for="location1">Inside US: </label>
+    <input type="radio" id="location1" name="location" value="in"><br>
+    <label for="location2">Outside of US: </label>
+    <input type="radio" id="location2" name="location" value="out"><br>
+    <p>How was your service?</p>
+    <select name="stars" id="">
+        <option value="Great">Great</option>
+        <option value="Ok">Ok</option>
+        <option value="Bad">Bad</option>
+    </select>
+    <p>Any other comments?</p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <input type="submit" value="Submit Feedback">
+</form>
+<!--- Create a hotel feedback form: Class solution --->
+<h1>Hotel Feedback</h1>
+<form action="redirect2.html">
+    <p>Are you from Inside or Outside USA?</p>
+    <label for="in">Inside US: </label>
+    <input type="radio" id="in" name="loc" value="in"><br>
+    <label for="out">Outside of US: </label>
+    <input type="radio" id="out" name="loc" value="out"><br>
+    <p>How was your service?</p>
+    <select name="stars" id="">
+        <option value="Great">&#9734&#9734&#9734</option>
+        <option value="Ok">&#9734&#9734</option>
+        <option value="Bad">&#9734</option>
+    </select>
+    <p>Any other comments?</p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <input type="submit" value="Submit Feedback">
+</form>
+<h1>Code Check-in Solution</h1>
+Instructions: Extend the order from from the previously defined online shop. Please implement the following forms:
+<ol>
+    <li>Name</li>
+    <li>Surname</li>
+    <li>Address</li>
+    <li>E-Mail</li>
+    <li>Coupon</li>
+    <li>Create Account (Yes or No). Use radio boxes, make sure you cannot select both</li>
+    <li>Order Experience (1-5). Please use a select box for this</li>
+    <li>Comments</li>
+</ol>
+<!-- Solution code begins here -->
+<form action="">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="sname">Surname</label>
+    <input type="text" id="sname" name="sname"><br>
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address"><br>
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="coupon"><span style="color:red">Coupon</span> </label>
+    <input type="text" id="coupon" name="coupon"><br>
+    <p>Create Account? Please select yes or no</p>
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="create" value="yes"><br>
+    <label for="no">No</label>
+    <input type="radio" id="no" name="create" value="no"><br>
+    <p>How was your order experience?</p><br>
+    <select id="experience">
+        <option name="5" value="4">&#9733&#9733&#9733&#9733&#9733</option>
+        <option name="4" value="4">&#9733&#9733&#9733&#9733</option>
+        <option name="3" value="3">&#9733&#9733&#9733</option>
+        <option name="2" value="2">&#9733&#9733</option>
+        <option name="1" value="1">&#9733</option>
+    </select>
+    <p>Any other comments?</p>
+    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter Comments here"></textarea><br>
+    <input type="submit" value="Submit order">
+</form>
+</body>
+</html>
