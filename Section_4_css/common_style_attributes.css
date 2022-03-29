@@ -1,0 +1,14 @@
+div{
+    background-color: green;
+}
+div span {
+    color:red;
+}
+div p {
+    background-color:lightblue;
+}
+span {
+    background-color: orange;
+    color: blue;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
