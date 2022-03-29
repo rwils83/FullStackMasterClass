@@ -6,6 +6,11 @@ div span {
 }
 div p {
     background-color:lightblue;
+    border-color: red;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10px;
+    text-align: center;
 }
 span {
     background-color: orange;
