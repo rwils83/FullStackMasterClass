@@ -1,0 +1,14 @@
+#s{
+	position:relative;
+	top:50%;
+	left:50%;
+}
+#override button {
+	position: relative;
+	top:0%;
+	left:0%;
+	
+}
+#override button .btn-secondary {
+	background-color:red;
+}
