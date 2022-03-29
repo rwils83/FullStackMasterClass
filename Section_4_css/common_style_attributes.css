@@ -3,6 +3,7 @@ div{
 }
 div span {
     color:red;
+    background-color: purple;
 }
 div p {
     background-color:lightblue;
