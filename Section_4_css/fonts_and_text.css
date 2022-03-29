@@ -1,0 +1,30 @@
+#Ten {
+	font-size: 1.25em;
+}
+#Five {
+	font-size: .85em;
+}
+#Fourteen {
+	font-size: 1.75em;
+}
+#Arial {
+	font-family: arial;
+}
+#Times {
+	font-family: times new roman;
+}
+
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: right;
+}
+
+#RightH1 {
+	text-align: right;
+}
+#CenterH2 {
+	text-align: center;
+}
+
