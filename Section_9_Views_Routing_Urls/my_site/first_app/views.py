@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound, Http404
 # Create your views here.
 
 # Create Function based views
@@ -35,3 +35,16 @@ def add_view_classway(request, num1, num2):
     except:
         return HttpResponse("I fucked up their way")
 
+def proper_response_not_found(request, topic):
+    try:
+        return HttpResponse(articles[topic])
+    except:
+        value = "This is not the droid you are looking for"
+        return HttpResponseNotFound(value)
+
+def proper_404(request, topic):
+    try:
+        return HttpResponse(articles[topic])
+    except:
+        value = "Generic 404"
+        raise Http404(value)
