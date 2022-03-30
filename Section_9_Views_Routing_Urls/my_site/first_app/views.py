@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound, Http404
+from django.http import HttpResponse, HttpResponseNotFound, Http404, HttpResponseRedirect
 # Create your views here.
 
 # Create Function based views
@@ -48,3 +48,9 @@ def proper_404(request, topic):
     except:
         value = "Generic 404"
         raise Http404(value)
+
+def redirect_test(request, page):
+    topic_list = list(articles.keys())
+    topic = topic_list[page]
+
+    return HttpResponseRedirect(f"../{topic}")
